@@ -1,11 +1,11 @@
-% !TEX TS-program = xetex
+% !TEX TS-program = latex
 % !TEX encoding = UTF-8
 
 \documentclass[unicode,hyperfootnotes=false,xetex,colorlinks=true,nofonts,nobib]{tufte-book} % use larger type; default would be 10pt
 
 %%
 % Book metadata
-\title{Typesetting Finger-Style Guitar}
+\title{Finale \\\noindent and \\\noindent Finger-Style Guitar}
 \author{Rachael Carlson}
 \publisher{rachaelcarlson.com}
 
@@ -86,7 +86,7 @@
 \fi
 \setmainfont[Numbers=OldStyle]{TeX Gyre Schola}
 \setsansfont[]{TeX Gyre Heros}
-\setmonofont[Scale=MatchLowercase]{Ubuntu Mono}
+\setmonofont[Scale=MatchLowercase]{Libertinus Mono}
 
 \setsidenotefont{\sffamily\scriptsize}
 \setmarginnotefont{\sffamily\scriptsize}
