@@ -1,0 +1,105 @@
+\documentclass[]{memoir}
+
+%%
+% Book metadata
+\title{Typesetting Finger-Style Guitar}
+\author{Rachael Carlson}
+
+%%
+% For nicely typeset tabular material
+\usepackage{booktabs}
+
+%%
+% Prints a trailing space in a smart way
+\usepackage{xspace}
+
+%%
+% Font configurations
+\usepackage{fontspec}
+\defaultfontfeatures{Mapping=tex-text}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+
+\setmainfont[Numbers=OldStyle]{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont[Scale=MatchLowerCase]{Libertinus Mono}
+
+%%
+% Use monospaced numbers within the tabular environment
+% \AtBeginEnvironment{tabular}{\setmainfont[Numbers={Monospaced}]{Antykwa Poltawskiego}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=red,
+    urlcolor=black
+}
+
+%%
+% Generates the index
+\usepackage{makeidx}
+\makeindex
+
+\begin{document}
+\frontmatter
+
+% Title Page
+\pagestyle{empty}
+\begin{flushright}
+  Rachael Carlson\\
+\end{flushright}
+\vspace*{1in}
+{\Huge \textsf{Typesetting\\
+    Finger-Style\\
+    Guitar:}}\\
+\begin{flushright}
+  {\Large An Exploration and} \\
+\end{flushright}
+\begin{flushright}
+  {\Large Attempt at Codification of} \\
+\end{flushright}
+\begin{flushright}
+  {\Large Typesetting Techniques}\\
+\end{flushright}
+\begin{flushright}
+  {\Large For Finger-Style Guitar}\\
+\end{flushright}
+
+\vspace*{1in}
+
+\url{rachaelcarlson.com}
+
+\clearpage
+\newpage
+  ~\vfill
+  \thispagestyle{empty}
+  \setlength{\parindent}{0pt}
+  \setlength{\parskip}{\baselineskip}
+  Copyright © 2018 Rachael Carlson.
+
+  \par\textsc{Published by Rachael Carlson}
+
+  \par\textsc{https://www.rachaelcarlson.com}
+
+  \par Licensed under the Apache License, Version 2.0 (the
+  ``License''); you may not use this file except in compliance with
+  the License. You may obtain a copy of the License at
+  \url{http://www.apache.org/licenses/LICENSE-2.0}. Unless required by
+  applicable law or agreed to in writing, software distributed under
+  the License is distributed on an \textsc{``AS IS'' BASIS, WITHOUT
+    WARRANTIES OR CONDITIONS OF ANY KIND}, either express or
+  implied. See the License for the specific language governing
+  permissions and limitations under the License.\index{license}
+
+  \par\textit{Alpha Edition, \today}
+
+  
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
