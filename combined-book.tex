@@ -20,8 +20,9 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
-\setmainfont[Numbers=OldStyle]{Libertinus Serif}
-\setsansfont[Numbers=OldStyle]{Libertinus Sans}
+\setmainfont[Numbers=OldStyle]{Minion Pro}
+\setsansfont[Numbers=OldStyle,
+BoldFont=Myriad Pro Black]{Myriad Pro}
 \setmonofont[Scale=MatchLowercase]{Libertinus Mono}
 
 %%
@@ -31,7 +32,7 @@
 
 %%
 % Use monospaced numbers within the tabular environment
-\AtBeginEnvironment{tabular}{\setmainfont[Numbers=Monospaced]{Libertinus Serif}}
+\AtBeginEnvironment{tabular}{\setmainfont[Numbers=Monospaced]{Minion Pro}}
 
 \usepackage{hyperref}
 % \hypersetup{
@@ -68,13 +69,13 @@
   Rachael Carlson\\
 \end{flushright}
 \vspace*{1in}
-{\Huge \textsf{Typesetting}}\\
+{\Huge \textsf{\textbf{Typesetting}}}\\
 
 \vspace*{.15in}
-\noindent{\Huge \textsf{Finger-Style}}\\
+\noindent{\Huge \textsf{\textbf{Finger-Style}}}\\
 
 \vspace*{.15in}
-\noindent{\Huge \textsf{Guitar:}}\\
+\noindent{\Huge \textsf{\textbf{Guitar}}}\\
 \begin{flushright}
   {\Large An Exploration and} \\
 \end{flushright}
@@ -294,7 +295,7 @@ layout.
 \chapter{Document Settings}
 These are the settings which are configurable through the
 document settings dialog.
-\section{\textsc{tab} Clef}
+\section{T A B Clef}
 Edit default TAB clef in Clef Designer (nudge `A' and 	`B' down)\\
 Font: TeXGyreSchola, Bold, 10pt
 \section{Line Weights}
@@ -747,7 +748,36 @@ read LilyPond's
 \href{http://lilypond.org/introduction.html}{introduction} with
 special attention to the section on
 \href{http://lilypond.org/text-input.html}{Text input}. This is
-perhaps the most radical component of this software.
+perhaps the most radical component of this software. The engraver
+produces a simple text document then runs the LilyPond program on that
+file. Depending on what is contained within the file, LilyPond can
+produce a variety of document types, such as \textsc{eps},
+\textsc{png}, and \textsc{pdf}.
+
+This part of the book will not attempt to introduce the reader to how
+to produce scores with LilyPond. Rather, this document will serve as a
+guidepost for creating accurate finger-style guitar scores with
+LilyPond.
+
+A couple of notes: first, the defaults for guitar tablature in
+LilyPond seem to loosely follow the conventions employed by Hal
+Leonard. If those conventions are considered good enough for you, I
+would recommend diving right in to using LilyPond as a music engraving
+tool. Second, LilyPond is attempting to recreate, in digital format,
+the sheet music produced by Barenreiter Verlag in the beginning of the
+20th century. Due to this LilyPond can seem a bit heavier handed than
+a digital engraving program like Finale or Sibelius. It is possible to
+use \href{https://www.smufl.org/}{SMuFL} fonts to change this
+heaviness. This book will not be going into the use of these fonts.
+
+My hope is that by producing this component of this book I will be
+able to encourage more individuals to use LilyPond to create their
+finger-style guitar scores. While LilyPond may not have some of the
+features of Finale or Sibelius at the moment, its price tag of \$free
+and this introduction into using it for finger-style guitar may keep
+users away from cheap alternative music engraving software which is
+woefully lacking in the necessary features to create an accurate,
+detailed, and beautiful finger-style guitar score.
 
 \backmatter
 \printindex
