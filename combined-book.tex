@@ -23,7 +23,7 @@
 \setmainfont[Numbers=OldStyle]{Minion Pro}
 \setsansfont[Numbers=OldStyle,
 BoldFont=Myriad Pro Black]{Myriad Pro}
-\setmonofont[Scale=MatchLowercase]{Libertinus Mono}
+\setmonofont[Scale=MatchLowercase]{Anonymous Pro}
 
 %%
 % EToolBox is needed for using monospaced numbers within the tabular
@@ -59,6 +59,11 @@ BoldFont=Myriad Pro Black]{Myriad Pro}
 \renewcommand\partnumfont{\normalfont\Large\scshape}
 \renewcommand\parttitlefont{\normalfont\Huge\bfseries\sffamily}
 \setsecheadstyle{\normalfont\Large\bfseries\sffamily}
+
+%%
+% color codes This doesn't work
+% \usepackage{minted}
+% \usemintedstyle{tango}
 
 \begin{document}
 \frontmatter
@@ -165,7 +170,7 @@ typesetter.
 \mainmatter
 
 \part{Finale}
-\chapter{Starting a New Document}
+\chapter{Starting a New Finale Document}
 \label{cha:start-new-docum}
 
 Before beginning a new Finale document one must ensure that all
@@ -773,11 +778,48 @@ heaviness. This book will not be going into the use of these fonts.
 My hope is that by producing this component of this book I will be
 able to encourage more individuals to use LilyPond to create their
 finger-style guitar scores. While LilyPond may not have some of the
-features of Finale or Sibelius at the moment, its price tag of \$free
+features of Finale or Sibelius at the moment, its price tag of free
 and this introduction into using it for finger-style guitar may keep
-users away from cheap alternative music engraving software which is
+users away from cheap alternative music engraving software that are
 woefully lacking in the necessary features to create an accurate,
 detailed, and beautiful finger-style guitar score.
+
+This section of the book will contain examples of LilyPond code. As
+mentioned above, the expectation is the reader will have availed his
+or herself of the Introduction to LilyPond. A good editor to start
+with for editing LilyPond code would be
+Frescobaldi.\footnote{\url{http://frescobaldi.org/uguide.html}}
+
+\chapter{Starting a New LilyPond Document}
+\label{cha:start-new-lilyp}
+
+\section{The Paper Environment}
+\label{sec:paper-environment}
+
+Within the paper environment there are a number of variables which
+need to be noted as the default variables are not going to work for
+finger-style guitar. Namely, the paper size, margins, fonts, and
+systems-per-page.
+\begin{verbatim}
+\paper {
+  #(set-paper-size "letter" 'portrait) % 'landscape is also an option
+  left-margin = 54\pt 
+  right-margin = 54\pt
+  top-margin = 36\pt
+  bottom-margin = 36\pt
+  max-systems-per-page = 3 % Any number you want
+  min-systems-per-page = 3 % Sometimes LilyPond doesn't put enough 
+                           % systems on a page
+  myStaffSize = #20 % This is a little smaller than default
+  #(define fonts
+    (set-global-fonts
+      #:music "mtf-haydn"
+      #:roman "Old Standard"
+      #:sans "TeX Gyre Heros"
+    )
+  )
+}
+\end{verbatim}
 
 \backmatter
 \printindex
