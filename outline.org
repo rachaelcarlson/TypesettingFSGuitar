@@ -1,1 +1,19 @@
-* 
+* Tasks for this project
+** TODO Create an Outline for the LilyPond part of the paper
+** TODO Finish Chapter 1
+*** DONE Write out section 1.2 Score Manager
+    CLOSED: [2018-05-27 Sun 14:19]
+*** DONE Write out section 1.3 Measures
+    CLOSED: [2018-05-27 Sun 14:22]
+*** TODO Write out section 1.4 Time and Key Signatures
+
+* Potential Tasks for this Project
+** TODO Add part for typesetting and editorial conventions for finger-style guitar scores
+
+* Thoughts on LilyPond Part
+  - How should I break up this part into its component parts?
+  - How does one actually start a new LilyPond Document with the aim
+    of creating a finger-style guitar score?
+  - 
+
+** 

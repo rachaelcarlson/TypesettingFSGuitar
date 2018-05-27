@@ -225,70 +225,89 @@ layout.
 \section{Score Manager}
 \label{sec:score-manager}
 
-\textbf{Window $\rightarrow$ Score Manager}
+The next steps for the creation of a new Finale Document is to set up the elements that are accessible through the \textit{Score Manager}. Access the score manager by going to the \textit{Window} menu in the menu bar and select \textit{Score Manager}.
 
-\begin{itemize}
-\item Instrument List
-  \begin{enumerate}
-  \item Standard Notation
-    \begin{enumerate}
-    \item Change clef for blank staff to desired clef
-    \item Add additional standard notation clefs as needed and change
-      clef
-    \end{enumerate}
-  \item Tablature
-    \begin{enumerate}
-    \item Add Instrument $\rightarrow$ Tablature $\rightarrow$ Guitar [TAB with Stems]
-    \item Change clef to serif `TAB'
-    \item Notation Style $\rightarrow$ Tablature $\rightarrow$ Settings
-      \begin{enumerate}
-      \item Change the tuning
-        \begin{enumerate}
-        \item Edit Instruments
-        \item Change pitches of each string to document tuning
-          \begin{itemize}
-          \item These will be \textsc{midi} note pitches
-          \item C\textsubscript{4} = 60
-          \end{itemize}
-        \end{enumerate}
-      \item Default Lowest Fret = 0
-      \item Capo Position = 0
-      \item Options
-        \begin{enumerate}
-        \item Show Tuplets \textbf{checked}
-        \item Show Clef Only On First Measure \textbf{unchecked}
-        \end{enumerate}
-      \item Fret Numbers
-        \begin{enumerate}
-        \item Vertical Offset = -4
-        \item Appearance
-          \begin{itemize}
-          \item Use Letters \textbf{unchecked}
-          \item Break Tablature Lines at Numbers \textbf{checked}
-          \end{itemize}
-        \end{enumerate}
-      \end{enumerate}
-    \end{enumerate}
-  \end{enumerate}
-\item File Info
-  \begin{enumerate}
-  \item Add all pertinent information in each of the respective sections 
-  \end{enumerate}
-\end{itemize}
+\subsection{Instrument List}
+\label{sec:instrument-list}
+
+Under the heading of \textbf{Instrument List}, we will be modifying the staffs that will be used for standard notation and for the tablature. For the standard notation change the clef for the default blank staff to the desired clef. Most likely we will be using the treble clef with the `8' below it. This indicates that the notes on the staff sound an octave lower than written. This is also the clef that is used for most guitar music when written in standard notation. For some guitar tunings which have pitches lower than C₂, it may be necessary to create another staff in the standard notation for a bass clef with an 8 below it. This helps avoid a dizzying amount of ledger lines.
+
+For the tablature, go to \texttt{Add Instrument $\rightarrow$ Tablature $\rightarrow$ Guitar [TAB with Stems]}. Change the clef to the serif `TAB.' Go to \texttt{Notation Style $\rightarrow$ Tablature $\rightarrow$ Settings} to change the options related to the tuning and other visual components. To change the tuning of the guitar go to \texttt{Edit Instruments}. From here you can change the pitches of each open string. The numbers used here are the pitches as they are represented in their corresponding \textsc{midi} numbers, ie. C₄ = 60. Ensure that the \texttt{Default Lowest Fret} and the \texttt{Capo Position} is 0. Under the \texttt{Options} section make sure that \texttt{Show Tuplets} is checked and \texttt{Show Clef Only On First Measure} is unchecked. In the \texttt{Fret Numbers} section, the default \texttt{Vertical Offset}  of --4 appears to be acceptable. I prefer the cleanliness of having \texttt{Break Tablature Lines at Numbers} checked. Stropes Editions, Ltd. has this setting unchecked.\footnote{There are benefits to both approaches to tablature number lines. Breaking the lines seems to increase the legibility of the numbers. In particular, \texttt{0} and \texttt{3} are more legible than when the lines go through them. On the other hand, breaking the lines can make it easier to have right-hand string-stopping lines go through the numbers, ie. ``Aerial Boundaries'' by Michael Hedges.}
+
+\subsection{File Info}
+\label{sec:file-info}
+
+In this section of \textit{Score Manager} you can edit all of the metadata for the document that is being produced. In the long run, this doesn't do much to streamline the process of creating a new document in Finale.
+
+% \textbf{Window $\rightarrow$ Score Manager}
+
+% \begin{itemize}
+% \item Instrument List
+%   \begin{enumerate}
+%   \item Standard Notation
+%     \begin{enumerate}
+%     \item Change clef for blank staff to desired clef
+%     \item Add additional standard notation clefs as needed and change
+%       clef
+%     \end{enumerate}
+%   \item Tablature
+%     \begin{enumerate}
+%     \item Add Instrument $\rightarrow$ Tablature $\rightarrow$ Guitar [TAB with Stems]
+%     \item Change clef to serif `TAB'
+%     \item Notation Style $\rightarrow$ Tablature $\rightarrow$ Settings
+%       \begin{enumerate}
+%       \item Change the tuning
+%         \begin{enumerate}
+%         \item Edit Instruments
+%         \item Change pitches of each string to document tuning
+%           \begin{itemize}
+%           \item These will be \textsc{midi} note pitches
+%           \item C\textsubscript{4} = 60
+%           \end{itemize}
+%         \end{enumerate}
+%       \item Default Lowest Fret = 0
+%       \item Capo Position = 0
+%       \item Options
+%         \begin{enumerate}
+%         \item Show Tuplets \textbf{checked}
+%         \item Show Clef Only On First Measure \textbf{unchecked}
+%         \end{enumerate}
+%       \item Fret Numbers
+%         \begin{enumerate}
+%         \item Vertical Offset = -4
+%         \item Appearance
+%           \begin{itemize}
+%           \item Use Letters \textbf{unchecked}
+%           \item Break Tablature Lines at Numbers \textbf{checked}
+%           \end{itemize}
+%         \end{enumerate}
+%       \end{enumerate}
+%     \end{enumerate}
+%   \end{enumerate}
+% \item File Info
+%   \begin{enumerate}
+%   \item Add all pertinent information in each of the respective sections 
+%   \end{enumerate}
+% \end{itemize}
 
 \section{Measures}
 \label{sec:measures}
 
-\begin{enumerate}
-\item Edit $\rightarrow$ Add Measures
-\item Add the total number of measures for the document
-  \begin{itemize}
-  \item If the document has multiple movements add the total number for all movements
-  \end{itemize}
-\end{enumerate}
+The next step is to add the total number of measures for the document. This can be done by going to \textit{Edit $\rightarrow$ Add Measures}. If the document has multiple movements, add the total number of measures for all movements.
+
+After creating all of the necessary measures, you can change the properties of the measures that need to be changed.
+
+% \begin{enumerate}
+% \item Edit $\rightarrow$ Add Measures
+% \item Add the total number of measures for the document
+%   \begin{itemize}
+%   \item If the document has multiple movements add the total number for all movements
+%   \end{itemize}
+% \end{enumerate}
 
 \section{Time and Key Signatures}
 \label{sec:time-key-signatures}
+
 
 \begin{enumerate}
 \item Change the time signature for the document
