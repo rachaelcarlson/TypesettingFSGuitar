@@ -21,12 +21,17 @@
 \usepackage{xltxtra}
 
 \setmainfont[Numbers=OldStyle]{Libertinus Serif}
-\setsansfont{Libertinus Sans}
-\setmonofont[]{Libertinus Mono}
+\setsansfont[Numbers=OldStyle]{Libertinus Sans}
+\setmonofont[Scale=MatchLowercase]{Libertinus Mono}
+
+%%
+% EToolBox is needed for using monospaced numbers within the tabular
+% environment
+\usepackage{etoolbox}
 
 %%
 % Use monospaced numbers within the tabular environment
-% \AtBeginEnvironment{tabular}{\setmainfont[Numbers={Monospaced}]{Antykwa Poltawskiego}}
+\AtBeginEnvironment{tabular}{\setmainfont[Numbers=Monospaced]{Libertinus Serif}}
 
 \usepackage{hyperref}
 % \hypersetup{
@@ -93,13 +98,13 @@
   \thispagestyle{empty}
   % \setlength{\parindent}{0pt}
   % \setlength{\parskip}{\baselineskip}
-  \noindent Copyright © 2018 Rachael Carlson.
+  \noindent Copyright © 2018 Rachael Carlson\\
 
-  \noindent \par\textsc{Published by Rachael Carlson}
+  \noindent \textsc{Published by Rachael Carlson}\\
 
-  \noindent \par\textsc{https://www.rachaelcarlson.com}
+  \noindent \textsc{https://www.rachaelcarlson.com}\\
 
-  \noindent \par Licensed under the Apache License, Version 2.0 (the
+  \noindent Licensed under the Apache License, Version 2.0 (the
   ``License''); you may not use this file except in compliance with
   the License. You may obtain a copy of the License at \url{http://www.apache.org/licenses/LICENSE-2.0}.
   Unless required by
@@ -132,6 +137,8 @@
 \vfill
 
 \clearpage
+\pagestyle{ruled}
+\nouppercaseheads
 
 \chapter{Introduction}
 This document owes much to the work of John Stropes and Joshua Lane at
@@ -169,7 +176,7 @@ on. Changing these elements after having started the document can
 introduce bugs which will either greatly hinder the development of the
 document or make it impossible to continue.
 
-\subsection{Initial Steps}
+\section{Initial Steps}
 \label{sec:initial-steps}
 
 The first several steps for creating a new document can seem
@@ -209,7 +216,7 @@ to Page Layout. Click on the \emph{Update Page Layout Tool}. Then
 delete the existing default measures. This should update the page
 layout.
 
-\subsection{Score Manager}
+\section{Score Manager}
 \label{sec:score-manager}
 
 \textbf{Window $\rightarrow$ Score Manager}
@@ -316,8 +323,8 @@ Vertical: & Start: 3 & End: 3\\
 Horizontal: & Start: 9.5 & End: $-9.5$\\
 Vertical: & Start $-3$ & End: $-3$
 \end{tabular}
-\chapter{Tablature Slides}
-\section{Smart Shape Tool}
+\section{Tablature Slides}
+\subsection{Smart Shape Tool}
 Smart Shape Placement\\
 Tab Slide\\
 Same V, Lines, Pitch Increasing\\
@@ -325,8 +332,8 @@ Same V, Lines, Pitch Increasing\\
 Start Point: & H: 1.5pt & End Point: & H: $-1.5$\\
 & V: 4 & & V: $-5.5$\\
 \end{tabular}
-\chapter{Page Layout}
-\section{Margins}
+\section{Page Layout}
+\subsection{Margins}
 Left, Right: 54pt\\
 Top, Bottom: 36pt
 \chapter{Text}
@@ -700,6 +707,47 @@ Font: Zeal 9 plain\\
   \end{tabular}
   \caption{Vertical Alignment of < and >}
 \end{table}
+
+\part{LilyPond}
+\label{part:lilypond}
+
+\chapter{Brief Introduction to LilyPond}
+\label{cha:brief-intr-lilyp}
+
+LilyPond\footnote{\url{lilypond.org}} is a free and open-source music
+typesetting program. As it pertains to the typesetting of finger-style
+guitar, LilyPond offers a great deal to those with patience. I
+personally found my way to LilyPond after a thorough search of the
+free and low-cost music typesetting programs. Soon after my
+preliminary experiments with LilyPond it became apparent to me that
+this program could reproduce, with a great deal of accuracy, the
+transcriptions produced by Stropes Editions,
+Ltd.\footnote{\url{stropes.com}} LilyPond describes itself as a
+\begin{quotation}
+  \noindent music engraving program, devoted to producing the
+  highest-quality sheet music possible.  It brings the aesthetics of
+  traditionally engraved music to computer printouts. LilyPond is free
+  software and part of the GNU Project.\footnote{LilyPond... Music
+    Notation for Everyone. \url{http://lilypond.org/} Accessed May 25,
+    2018.}
+\end{quotation}
+I find several components of this compelling. First, and truly most
+important, is that the program and those dedicated few who contribute
+to its development are interested in producing the best quality
+engravings. Once one dives deep into this program it is easy to
+perceive this devotion. Secondly is that the program is free and
+cross-platform. On a more personal level, I enjoy that I am able to
+use my favorite text editor,
+\href{https://www.gnu.org/software/emacs/}{Emacs}, to create sheet
+music.
+
+LilyPond can be a daunting program when first encountered due to its
+steep learning curve. I would highly encourage anyone interested to
+read LilyPond's
+\href{http://lilypond.org/introduction.html}{introduction} with
+special attention to the section on
+\href{http://lilypond.org/text-input.html}{Text input}. This is
+perhaps the most radical component of this software.
 
 \backmatter
 \printindex
