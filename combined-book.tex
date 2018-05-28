@@ -22,7 +22,7 @@
 
 \setmainfont[Numbers=OldStyle]{Minion Pro}
 \setsansfont[BoldFont=Myriad Pro Black]{Myriad Pro}
-\setmonofont[Scale=MatchLowercase]{Anonymous Pro}
+\setmonofont[Scale=MatchLowercase]{Latin Modern Mono}
 
 %%
 % EToolBox is needed for using monospaced numbers within the tabular
@@ -371,34 +371,44 @@ Top, Bottom: 36pt
 \label{sec:mtf-haydn}
 
 I use the Haydn music font from Music Type Foundry. Here are the recommended document options for MTF-Haydn:
-Barlines - Thin Line Thickness ....................... 0.19
-Barlines - Space Between Double Barlines ............. 0.30
-Barlines - Heavy Line Thickness ...................... 0.60
-Beams - Beam Thickness ............................... 0.70
-Beams - Secondary Beam Separation .................... 0.91
-Lines and Curves - Shape Designer Slur - Tip Width ... 0.08
-Slur Mid-thickness ................................... 0.28
-Lines and Curves - Ledger Lines - Thickness .......... 0.20
-Lines and Curves - Line Thickness - Staff Lines ...... 0.10
-Stems - Stem Line Thickness .......................... 0.13
-Ties - Tie Thickness - Tip Width ..................... 0.08
-Ties - Tie Thickness - Left/Right .................... 0.28
-Tuplets - Bracket Thickness .......................... 0.16
-Grace Note Slash Thickness ........................... 0.13021
-Flags - Flag Positioning (All) ....................... 0.0 (Horizontal \& Vertical)
-Flags - Flag Spacing ................................. 0.83333
-Flags - Secondary Group Adjust ....................... 0.0
+\begin{table}[h!]
+  \begin{tabularx}{1.0\linewidth}{l l}
+    Element & Unit \\\hline
+    Barlines - Thin Line Thickness & 0.19\\
+    Barlines - Space Between Double Barlines & 0.30\\
+    Barlines - Heavy Line Thickness & 0.60\\
+    Beams - Beam Thickness & 0.70\\
+    Beams - Secondary Beam Separation & 0.91\\
+    Lines and Curves - Shape Designer Slur - Tip Width & 0.08\\
+    Slur Mid-thickness & 0.28\\
+    Lines and Curves - Ledger Lines - Thickness & 0.20\\
+    Lines and Curves - Line Thickness - Staff Lines & 0.10\\
+    Stems - Stem Line Thickness & 0.13\\
+    Ties - Tie Thickness - Tip Width & 0.08\\
+    Ties - Tie Thickness - Left/Right & 0.28\\
+    Tuplets - Bracket Thickness & 0.16\\
+    Grace Note Slash Thickness & 0.13021\\
+    Flags - Flag Positioning (All) (Horizontal \& Vertical) & 0.0\\
+    Flags - Flag Spacing & 0.83333\\
+    Flags - Secondary Group Adjust & 0.0\\
+  \end{tabularx}
+  \caption{MTF-Haydn Stylehsheet in Staff Space Units}
+\end{table}
+\begin{table}[h!]
+  \begin{tabularx}{1.0\linewidth}{l r r}
+    Element & Horiz. & Vertic.\\\hline
+    Outer Tip & -0.88 & 1.0\\
+    Inner Tip & 0.65 & 0.42\\
+    Outer Body & 0.05 & 0.8\\
+    Inner Body & 0.58 & 0.9\\
+    Width of Brace & 1.125 &\\
+    Center Thickness & 0.2 &\\
+    Tip Thickness & 0.2 &\\
+    
+  \end{tabularx}
+  \caption{Piano Brace Control Points in Staff Space Units}
+\end{table}
 
-Piano Brace Control Points:
-
-                   Horiz.   Vertic.
- Outer Tip         -0.88    1.0
- Inner Tip         0.65     0.42
- Outer Body        0.05     0.8
- Inner Body        0.58     0.9
- Width of Brace    1.125
- Center Thickness  0.2
- Tip Thickness     0.2
 \chapter{Text}
 \section{Title}
 Font: Avenir Next Heavy, 28pt\footnote{A bug in Finale 25 on Windows
