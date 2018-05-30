@@ -20,8 +20,8 @@
 \usepackage{xunicode}
 \usepackage{xltxtra}
 
-\setmainfont[Numbers=OldStyle]{Minion Pro}
-\setsansfont[BoldFont=Myriad Pro Black]{Myriad Pro}
+\setmainfont[Numbers=OldStyle]{Latin Modern Roman}
+\setsansfont[BoldFont=Avenir Next Heavy]{Avenir Next}
 \setmonofont[Scale=MatchLowercase]{Latin Modern Mono}
 
 %%
@@ -31,7 +31,8 @@
 
 %%
 % Use monospaced numbers within the tabular environment
-\AtBeginEnvironment{tabular}{\setmainfont[Numbers=Monospaced]{Minion Pro}}
+\AtBeginEnvironment{tabular}{\setmainfont[Numbers=Monospaced]{Latin Modern Roman}}
+\AtBeginEnvironment{tabularx}{\setmainfont[Numbers=Monospaced]{Latin Modern Roman}}
 
 \usepackage{hyperref}
 % \hypersetup{
@@ -167,6 +168,39 @@ annotation of a `\textsf{p}' clarifying or obfuscating the will of the
 typesetter.
 
 \mainmatter
+
+\part{Typesetting Finger-Style Guitar}
+\label{part:types-fing-style}
+
+\chapter{New and Old Conventions}
+\label{cha:new-old-conventions}
+
+The typesetting of finger-style guitar can recall to mind the scores
+of lutes, baroque guitars, and vihuelas. There are numerous reasons
+why this recollection occurs. There is a distinct similarity the
+reasons why tablature was extensively used in the sheet music of
+fretted early instruments.
+
+\subsection{Justification}
+\label{sec:justification}
+
+There are numerous reasons why one would decide to focus one's time on
+ensuring that his or her tablature contains the most amount of detail
+possible: the plethora of alternate tunings; right-hand string
+damping\footnote{In the sheet music published by Stropes Editions, Ltd. this technique is called right-hand string-stopping. I believe that the term `string stopping' is potentially confusing as it can be confused with the act of stopping a string with the left hand. For instance, in bowed instruments there is a technique called `double stops' in which two notes are played at the same time.} ; extended techniques; percussion.
+\paragraph{Tunings}
+
+The structure of the steel-string acoustic guitar allows for a
+multitude of tunings. The standard notation that one learned on the
+guitar goes right out the window when the tuning of more than two
+strings are altered. It is more pragmatic to tell the reader where to
+place his or her fingers than to say what the pitches are.
+
+\paragraph{Right-Hand String Damping}
+
+While Michael Hedges may not have been a pioneer when it comes to
+string damping on the guitar, it is indisputable that he was an
+innovator. It could be argued that his use of right-hand string damping
 
 \part{Finale}
 \chapter{Starting a New Finale Document}

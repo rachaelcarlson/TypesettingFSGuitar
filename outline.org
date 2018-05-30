@@ -1,6 +1,6 @@
 * Tasks for this project
 ** TODO Create an Outline for the LilyPond part of the paper
-** TODO Finish Chapter 1
+** DONE Finish Chapter 1 
 *** DONE Write out section 1.2 Score Manager
     CLOSED: [2018-05-27 Sun 14:19]
 *** DONE Write out section 1.3 Measures
@@ -10,11 +10,28 @@
 
 * Potential Tasks for this Project
 ** TODO Add part for typesetting and editorial conventions for finger-style guitar scores
-
+  - I think that this should be one of the primary goals of this
+    book. I think that it should be the first part of this book.
 * Thoughts on LilyPond Part
   - How should I break up this part into its component parts?
   - How does one actually start a new LilyPond Document with the aim
     of creating a finger-style guitar score?
   - 
 
-** 
+** Typesetting Finger-Style Guitar
+
+*** TODO Outline 
+**** Outline
+     - Introduction (New and Old Conventions)
+       - Perhaps this could be a brief history of tablature
+       - Explain the multitude of reasons why one would want to
+         typeset finger-style guitar in tablature and not standard
+         notation.
+       - Provide rough examples of cutting edge typesetting and
+         editorial methods being utilized in the transcription and
+         typesetting of finger-style guitar
+     - 21st Century Tablature
+       - Exhaustive left-hand annotations
+       - Exhaustive right-hand annotations
+       - Exhaustive articulations
+
